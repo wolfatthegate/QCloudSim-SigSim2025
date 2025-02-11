@@ -1,0 +1,4 @@
+.ipynb_checkpoints/
+utility_functions/__pycache__/
+QCloud/__pycache__/
+.DS_Store
