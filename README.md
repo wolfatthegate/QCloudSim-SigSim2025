@@ -139,11 +139,12 @@ The simulation will execute, logging events to your console (as specified by pri
 If you use this artifact in your work, please cite:
   
    ```
-     @misc{SigSim2025,
-       author       = {A Digital Twin of Scalable Quantum Clouds},
-       title        = {{Submission to SigSim2025}},
-       year         = {2025},
-       doi          = {10.5281/zenodo.15099199},
-       howpublished = {\url{https://github.com/quantumcloudsim/SigSim2025.git}}
-     }
+   @inproceedings{luo2025digital,
+     title={A Digital Twin of Scalable Quantum Clouds},
+     author={Luo, Waylon and Baheri, Betis and Humble, Travis and Zhao, Jiapeng and Zhan, Tong and Maharjan, Rajan and Guan, Qiang},
+     booktitle={39th ACM SIGSIM Conference on Principles of Advanced Discrete Simulation},
+     pages={165--175},
+     doi = {10.5281/zenodo.15099199},
+     year={2025}
+   }
    ```
