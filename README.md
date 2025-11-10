@@ -12,7 +12,7 @@ This repository contains the SigSim2025 artifact: a digital‑twin simulation of
 ## Cloning the repository
 To clone the repository, run the following command. 
 ```bash
-git clone https://github.com/quantumcloudsim/SigSim2025.git
+git clone https://github.com/wolfatthegate/QCloudSim-SigSim2025.git
 ```
 
 ## Python Environment (if not using Docker)
@@ -30,11 +30,11 @@ git clone https://github.com/quantumcloudsim/SigSim2025.git
    python3 -m venv .venv
    .venv\Scripts\Activate.ps1      # Windows PowerShell
    ```
-3.	**Install dependencies**
+3. **Install dependencies**
    ```bash
    pip install -r requirements.txt
    ```
-3.	**Run Use‑Case scripts**
+3. **Run Use‑Case scripts**
    ```bash
    python3 Section-6-Use-case-1.py
    python3 Section-6-Use-case-2.py
@@ -44,24 +44,24 @@ We also generated an image for this work and made it public. You can fetch the c
 
 1. **Clone the repository**
    ```bash 
-   git clone https://github.com/quantumcloudsim/SigSim2025.git
+   git clone https://github.com/wolfatthegate/QCloudSim-SigSim2025.git
    cd SigSim2025
    ```
 2. **Pull the container image**
 
    ```bash
-   docker pull ghcr.io/quantumcloudsim/sigsim2025:latest
+   docker pull ghcr.io/wolfatthegate/QCloudSim-SigSim2025:latest
    ```
 3. **Run Use-Case 1**
 
     ```bash
-    docker run --rm ghcr.io/quantumcloudsim/sigsim2025:latest \
+    docker run --rm ghcr.io/wolfatthegate/QCloudSim-SigSim2025:latest \
     python Section-6-Use-case-1.py
     ```
 3. **Run Use-Case 2**
 
     ```bash
-    docker run --rm ghcr.io/quantumcloudsim/sigsim2025:latest \
+    docker run --rm ghcr.io/wolfatthegate/QCloudSim-SigSim2025:latest \
     python Section-6-Use-case-2.py
     ```
 ## Repository Structure
@@ -85,10 +85,10 @@ We also generated an image for this work and made it public. You can fetch the c
 
 This example demonstrates how to set up and run a simulation using the QCloud framework. The code initializes a device (using the IBM_Kawasaki class) and runs a simulation environment (QCloudSimEnv) with a custom job generation model. The simulation runs until a specified time limit.
 
-1.	**Prepare the Environment:**
+1. **Prepare the Environment:**
 Make sure you have created a virtual environment and installed all required packages.
 
-2.	**Run the Simulation:**
+2. **Run the Simulation:**
 Save the following sample code in a Python file (e.g., simulate.py):
 
    ```python
@@ -103,7 +103,7 @@ Save the following sample code in a Python file (e.g., simulate.py):
    )
    qcloudsimenv.run(until=100)
    ```
-3.	**Observe the Output:**
+3. **Observe the Output:**
 The simulation will execute, logging events to your console (as specified by printlog=True). You can review the simulation steps and results, which might include job scheduling, device processing, and more depending on how the QCloud framework is designed. If you choose to print the log, the output looks somewhat a like: 
 
 ```
@@ -123,16 +123,16 @@ The simulation will execute, logging events to your console (as specified by pri
 ```
 **Code Explanation**
 
--	IBM_Kawasaki Initialization:
-   -	env=None: No specific environment passed during initialization.
-   -	name="ibm_kawasaki": Assigns a name to the device instance.
-   -	printlog=True: Enables logging to standard output.
--	QCloudSimEnv Setup:
-   -	devices=[ibm_kawasaki]: Registers the device to be used in the simulation.
-   -	broker_class=ParallelBroker: Uses the ParallelBroker class to manage job distribution.
-   -	job_feed_method="generator": Configures the environment to generate jobs using a generator.
-   -	job_generation_model=lambda: random.expovariate(lambd=0.1): Defines a job generation model where jobs arrive following an exponential distribution.
--	qcloudsimenv.run(until=100): Runs the simulation for 100 time units. You can modify this value to run the simulation for a different period.
+-  IBM_Kawasaki Initialization:
+   -  env=None: No specific environment passed during initialization.
+   -  name="ibm_kawasaki": Assigns a name to the device instance.
+   -  printlog=True: Enables logging to standard output.
+-  QCloudSimEnv Setup:
+   -  devices=[ibm_kawasaki]: Registers the device to be used in the simulation.
+   -  broker_class=ParallelBroker: Uses the ParallelBroker class to manage job distribution.
+   -  job_feed_method="generator": Configures the environment to generate jobs using a generator.
+   -  job_generation_model=lambda: random.expovariate(lambd=0.1): Defines a job generation model where jobs arrive following an exponential distribution.
+-  qcloudsimenv.run(until=100): Runs the simulation for 100 time units. You can modify this value to run the simulation for a different period.
 
 
 ## Citation 
