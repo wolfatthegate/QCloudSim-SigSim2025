@@ -20,7 +20,7 @@ RUN pip install --upgrade pip && pip install -r requirements.txt
 COPY . .
 
 # Helpful metadata for GHCR
-LABEL org.opencontainers.image.title="SigSim2025" \
+LABEL org.opencontainers.image.title="QCloudSim-SigSim2025" \
       org.opencontainers.image.description="Digital-twin simulation of a quantum cloud environment" \
       org.opencontainers.image.source="https://github.com/wolfatthegate/QCloudSim-SigSim2025" \
       org.opencontainers.image.licenses="Apache-2.0"
