@@ -45,7 +45,7 @@ We also generated an image for this work and made it public. You can fetch the c
 1. **Clone the repository**
    ```bash 
    git clone https://github.com/wolfatthegate/QCloudSim-SigSim2025.git
-   cd SigSim2025
+   cd QCloudSim-SigSim2025
    ```
 2. **Pull the container image**
 
