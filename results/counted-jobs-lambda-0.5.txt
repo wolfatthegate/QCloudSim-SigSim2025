@@ -1,0 +1,13 @@
+LAMBDA: 0.5
+device name: 6, processed jobs by machine: 456, avg_fidelity: 0.7514 +/- 0.0774, avg_waittime: 34.3973 +/- 16.7856
+device name: 5, processed jobs by machine: 424, avg_fidelity: 0.7560 +/- 0.0805, avg_waittime: 216.2762 +/- 123.0579
+device name: 3, processed jobs by machine: 396, avg_fidelity: 0.7518 +/- 0.0800, avg_waittime: 222.7718 +/- 118.4578
+device name: 11, processed jobs by machine: 455, avg_fidelity: 0.7565 +/- 0.0794, avg_waittime: 30.0482 +/- 15.0319
+device name: 10, processed jobs by machine: 470, avg_fidelity: 0.7522 +/- 0.0803, avg_waittime: 33.2311 +/- 15.4323
+device name: 1, processed jobs by machine: 368, avg_fidelity: 0.7434 +/- 0.0793, avg_waittime: 245.2951 +/- 118.3799
+device name: 4, processed jobs by machine: 405, avg_fidelity: 0.7504 +/- 0.0796, avg_waittime: 216.1952 +/- 111.8531
+device name: 9, processed jobs by machine: 478, avg_fidelity: 0.7506 +/- 0.0798, avg_waittime: 32.5174 +/- 15.5619
+device name: 8, processed jobs by machine: 496, avg_fidelity: 0.7579 +/- 0.0792, avg_waittime: 28.8193 +/- 13.7845
+device name: 2, processed jobs by machine: 384, avg_fidelity: 0.7511 +/- 0.0797, avg_waittime: 235.2722 +/- 140.2857
+device name: 7, processed jobs by machine: 476, avg_fidelity: 0.7521 +/- 0.0805, avg_waittime: 29.8006 +/- 13.6282
+Total job processed: 4808 | Never Assigned: 315
